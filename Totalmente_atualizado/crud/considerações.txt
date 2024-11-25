@@ -1,0 +1,7 @@
+Para validação de senha:
+
+1 - Recomendável validar e sanitizar as entradas do usuário antes de usá-las. Isso pode ser feito com funções como filter_var() para emails ou preg_match() para senhas.
+2 - em vez de usar sha1, use password_hash para criptografar a senha. O password_hash usa um algoritmo de hash forte e seguro, além de adicionar um "salt" automaticamente, tornando-o mais seguro.
+3 - em vez de inserir diretamente os valores na string SQL, use placeholders (?) e ligue as variáveis usando bind_param. Isso previne injeções de SQL.
+4 - Use === (com 3) para comparar as senhas, garantindo que você não tenha problemas com comparações de tipo (== pode considerar 0 == "0" como verdadeiro, por exemplo).
+5 - Sempre que possível, minimize a exposição de mensagens de erro detalhadas ao usuário final, pois isso pode fornecer informações úteis para um atacante.

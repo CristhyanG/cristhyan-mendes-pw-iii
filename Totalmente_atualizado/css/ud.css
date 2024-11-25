@@ -1,0 +1,25 @@
+body{
+    margin:0 auto;
+    padding: 0;
+
+   width: 100vh;
+   height: 100vh;
+   background: #ffffed;
+}
+div{
+    width: 420px;
+    background: #2F4FBA;
+    color: #fff;
+    border-radius: 100px;
+    
+    box-shadow: 15px 15px 10px #888;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+section{
+    width: 100%;
+}
